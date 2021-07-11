@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дело в платке</title>
+<link rel=stylesheet href=main.css >
+<script src=main.js ></script>
+</head>
+
+<body>
+<div id=container>
+<div class=logo><a href=index.html><img src=pic/logo.jpg alt=logo title="Дело в платке"></a></div>
+
+<div id=nav>
+	<div><a href=Models.html>Каталог</a></div>
+	<div>О нас</div>
+	<div>Новости</div>
+	<div><a href=test.html>Тест</a></div>
+</div>
+
+<div class=basket><a href=#>Мои покупки</a></div>
+<div class=sale></div>
+<form id=bay>
+<fieldset>
+	<legend><strong>Контактная информация</strong></legend>
+		<label>Имя: </label><input type=text required ><br>
+		<label>Телефон: </label><input type=tel multiple placeholder="в формате +7..."><br>
+		<label>Эл. адрес: </label><input type=email multiple placeholder="несколько адресов разделяйте запятыми" ><br>
+</fieldset>
+
+<fieldset>
+	<legend><strong>Дополнительные данные</strong></legend>
+		<label>Время получения:</label>
+			<input type=time list=time ><br>
+			<datalist id=time>
+				<option label="Пораньше" value="Утро">
+				<option label="На работе" value="День">
+				<option label="После шести" value="Вечер">
+			</datalist>
+		<label class=dost >Способ получения:</label>
+			<div class=dost >
+			<label><input type=radio name=dost > Самовывоз</label><br>
+			<label><input type=radio name=dost > Курьер</label><br>
+			<label><input type=radio name=dost > Почта</label><br>
+			</div>	
+</fieldset>
+
+<fieldset>
+	<legend><strong>Комментарии к заказу</strong></legend>
+		<input type=text >
+</fieldset>
+	
+	<input type=submit value="Заказать"/>
+</form>
+
+<footer> 
+	<div class=tel>Наши контакты</div>
+	<div class=feedback>Отзывы</div> 
+</footer>
+</div>
+</body>
+</html>
