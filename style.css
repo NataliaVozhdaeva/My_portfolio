@@ -15,6 +15,7 @@ body {
   max-width: 928px;
   margin: 0 auto;
   padding: 0 16px;
+  text-align: justify;
 }
 
 .page-header {
@@ -118,6 +119,10 @@ body {
   background-image: url("img/icon-css.svg");
 }
 
+.skill-js{
+  background-image: url("img/icon-js.png");
+}
+
 .level {
   margin: 4px 0 16px;
   padding: 0;
@@ -167,6 +172,7 @@ body {
   border-radius: 4px;
   background-color: #288be6;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .page-footer {
