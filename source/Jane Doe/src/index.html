@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Тестовое_Вождаева</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <header class="page-header">
+        <img class="logo" src="pic/Logo.png" />
+        <nav class="nav">
+            <a class="nav__item" href="#hero">Jane Doe</a>
+            <a class="nav__item" href="#formField">Tell us about yourself</a>
+            <a class="nav__item" href="#slider">Slider</a>
+        </nav>
+    </header>  
+    <main class="main">
+        <article class="hero"><a name="hero"></a>
+            <img class="hero__userPhoto" src="pic/userPhoto.png" />
+            <div class="hero__info">
+                <h1>Jane Doe</h1>
+                <div class="hero__info__brif">
+                    <div class="brif_item">
+                        <span class="key" style="grid-area:birthday">Date of birth</span>
+                        <span class="value" style="grid-area:birthValue">21.04.2001</span>
+                    </div>
+                    <div class="brif_item">
+                        <span class="key" style="grid-area:gender">Gender</span>
+                        <span class="value" style="grid-area:genderValue">Female</span>
+                    </div>
+                    <div class="brif_item">
+                        <span class="key" style="grid-area:country">Country</span>
+                        <span class="value" style="grid-area:countryValue">Corea</span>
+                    </div>
+                </div>
+                <section class="hero__info__aboutMe">
+                    <h3>About me</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                        ex ea commodo consequat. </p>
+                        
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                </section>
+            </div>
+        </article>
+        
+        <div class="formContainer"><a name="formField"></a>
+            <h2>Tell us about yourself</h2>
+            
+            <form class="form" action="" method="post" enctype="multipart/form-data">
+                <div class="form__fieldContainer" style="grid-area:userName">
+                    <label for="userName">Your name*</label>
+                    <br>
+                    <input required type="text" name="userName" id="userName" pattern="[A-Za-zА-Яа-яЁё]+$" class="form__field" placeholder="Tell us your name" autocomplete="off">
+                </div>
+
+                <div class="form__fieldContainer" style="grid-area:userGender"> 
+                    <label for="userGender">Your gender*</label>
+                    <br>        
+                    <input required name="userGender" class="form__field" id="userGender" placeholder="Chose your gender" list="gender" autocomplete="off">
+                        <datalist id="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </datalist> 
+                </div>
+                
+                <div class="form__fieldContainer disabled" style="grid-area:userCountry">
+                    <label for="userCountry">Your country</label>
+                    <br>
+                    <input type="text" name="userCountry" id="userCountry" class="form__field" placeholder="Where ara you from">
+                </div>
+
+                <div class="form__fieldContainer disabled" style="grid-area:userCity">
+                    <label for="userCity">Your City</label>
+                    <br>
+                    <input type="text" name="userCity" id="userCity" class="form__field" placeholder="Your native city">
+                </div>
+
+                <div class="form__fieldContainer disabled" style="grid-area:userBirthday">
+                    <label for="userBirthday">Your date of birth*</label>
+                    <br>
+                    <input require type="text" name="userBirthday" id="userBirthday" class="form__field" 
+                    placeholder="dd.mm.yyyy" value='дд.мм.гггг'
+                    pattern="(0[1-9]|[12][0-9]|3[01])[.](0[1-9]|1[012])[.](19|20)\d\d">
+                </div>
+
+               <div class="form__fieldContainer form__fieldContainer_forFile disabled" style="grid-area:userDocument">
+                    <input type="file" name="userDocument" id="userDocument" class="form__field form__field_big">
+                    <label for="userDocument" class="field__fileContainer">
+                       <span class="fileButtonText">Proof your identity with some documents* </span>
+                       <div class="form__field form__field_small small_mobile">Add document</div>
+                    </label>
+                </div> 
+
+                <!--<div class="form__field getDocument" style="grid-area:getDocument">
+                    <img src="pic/preview.png" />
+                    <span class="fileName">File_name_001</span><span class="fileSize">JPG_25mb</span>
+                    <i class="fa fa-trash"></i>
+                </div>-->
+                
+                <button type="submit" id="submitBtn" class="btn btn_submit form__field_small" style="grid-area:submit">
+                    Send info
+                </button>
+                <div class="form__checkboxContainer" style="grid-area:checkbox">
+                    <input type="checkbox" id="checkbox" name="complited" class="checkbox" />
+                    <label for="checkbox">Complited</label>
+                </div>
+              </form>
+        </div>
+
+        <section class="slider"><a name="slider"></a>
+            <form>
+            <div class="slider__pics">
+                <!--<div class="arrow left"></div>
+                <div class="arrow right"></div>-->
+
+                <input class="sliderRadio" type="radio" name="slider" checked/>
+                <img src="pic/slider1.png" class="item" alt="Картинка с морем. Красивым таким. Прибой прям, пена, вот это все... Жаль, что что-то пошло не так, и вам не видно..." />
+
+                <input class="sliderRadio" type="radio" name="slider"  />
+                <img src="pic/slider2.png" class="item" alt="Картинка с лесом. Густым, зеленым. И туман такой сверху." />
+
+                <input class="sliderRadio" type="radio" name="slider"  />
+                <img src="pic/slider3.png" class="item" alt="Картинка с горами. Они и сами такие высокие, а точка съемки еще выше. И облака такие ниже вершин." />
+
+                <h1 class="slider__header">Slide this photo</h1>
+                <p class="slider__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                </p>
+            </div>
+            </form>
+        </section>  
+        
+       <section class="mobileSlider">
+            <form>
+            <div class="mobileSlider__pics">
+                <div class="mobileArrow left"></div>
+                <div class="mobileArrow right"></div>
+
+                <input class="mobileSliderRadio" type="radio" name="slider" checked/>
+                <img src="pic/sliderMobile1.png" alt="Картинка с морем. Красивым таким. Прибой прям, пена, вот это все..." />
+
+                <input class="mobileSliderRadio" type="radio" name="slider" alt="Картинка с лесом. Густым, зеленым. И туман такой сверху." />
+                <img src="pic/sliderMobile2.png" />
+
+                <input class="mobileSliderRadio" type="radio" name="slider" alt="Картинка с горами. Они и сами такие высокие, а точка съемки еще выше. И облака такие ниже вершин." />
+                <img src="pic/sliderMobile3.png" />
+
+                <h1 class="mobileSlider__header">Slide this photo</h1>
+                <p class="mobileSlider__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                </p>
+            </div>
+            </form> 
+        </section>
+
+    </main>  
+    </div> 
+    <script src="js/main.min.js"></script>
+  </body>
+
+</html>  
