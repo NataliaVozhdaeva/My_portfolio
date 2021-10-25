@@ -119,8 +119,16 @@ body {
   background-image: url("img/icon-css.svg");
 }
 
-.skill-js{
+.skill-js {
   background-image: url("img/icon-js.png");
+}
+
+.skill-react {
+  background-image: url("img/1.png");
+}
+
+.skill-ts {
+  background-image: url("img/type.png");
 }
 
 .level {
