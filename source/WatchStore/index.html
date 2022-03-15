@@ -1,126 +1,311 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-    <title>Портфолио Junior dev_Вождаева</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/header_style.css">
+  <link rel="stylesheet" href="styles/main_style.css">
+  <link rel="stylesheet" href="styles/footer_style.css">
+  <title>Watch</title>
+</head>
 
-  <body>
-    <header class="page-header">
-      <div class="container">
-      <a href="tel:+79539229206" class="header-phone">tel: +7-953-922-92-06</a>
-      <a href="mailto:LomzNat@yandex.ru" class="header-email">e-mail: LomzNat@yandex.ru</a>  
-      </div>  
-    </header>
+<body>
 
-    <section class="hero-image">
-      <div class="container">
-      <h1 class="heading">Привет</h1>
-      <p>Я хочу быть верстальщиком и Junior-разработчиком</p>
+<header class="page-header">
+  <h1 class="visually-hidden">Коллекция часов Conquest</h1>
+  <nav class="page-header__main-nav main-nav">
+    <a class="main-nav__logo logo">
+      <img class="logo__img" src="img/logo.jpg" alt="Логотип" width="103" height="26">
+    </a>
+
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">Каталог</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">Акции</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">Доставка</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="page-header__user-nav user-nav">
+      <a class="user-nav__link" href="#"> 
+        <img src="img/Vector.jpg" alt="поиск" >
+      </a>
+      <a class="user-nav__link" href="#">
+        <img src="img/Vector-2.jpg" alt="избранное" >
+      </a>
+      <a class="user-nav__link" href="#" >
+        <img src="img/Vector-1.jpg" alt="корзина" >
+      </a>
+  </nav>
+</header>
+
+<main class="main">
+  <section class="promo">
+    <div class='promo__info'>
+      <h2 class="promo__title">Весна/Лето 2019</h2>
+      <p class="promo__sub-title">Коллекция</p>
+      <p class="promo__description">Швейцарские часы в наличии в Москве и с доставкой по всему миру</p>
+      <a class="promo__link button button--dark" href="#">Смотреть каталог</a>
     </div>
-    </section>
-
-    <section class="intro">
-      <div class="container">
-      <h2 class="subheading">Давайте знакомиться</h2>
-      <figure class="user-image">
-        <img src="files/photo2.jpeg" width="928" height="536" alt="Фотография">
-      </figure>
-      <h3>Меня зовут Наталья Вождаева.</h3>
-      <p>С детства мечтала быть программистом. Сразу не получилось, а совсем не поступить - ну, нельзя было как-то... 
-        Однозначная прелесть взрослости в том, что мечты можно сбывать самостоятельно. Поэтому, хоть в 33 начинать сложнее, 
-        чем в 18, но, наверное, легче, чем в 34 - и я решилась. Люблю магию превращения странных символов и слов 
-        в понятные "странички сайтов". А еще умею писать тексты и смешно шутить (иногда). И со мной можно разговаривать про кино. 
-        В качестве хобби вяжу и рисую, но пока не придумала, как применить это в этой профессии. Хочу изучить canvas. 
-      <h3>Чем могу быть полезна</h3>
-      <p>Знаю html, css, scss, javaScript. Работала с gulp, webpack. Сейчас изучаю React. Могу верстать. Думаю, могу писать на js
-        какие-то не очень сложные вещи. Могу писать и редактировать тексты при необходимости и исправлять ошибки, если 
-        где базовое образование пригодится. Не затягиваю сроки, стараюсь не откладывать работу на последний момент и делать заранее все, 
-        что можно сделать заранее. 
-      </p>
-    
-    <div class="skills">
-      <h3>Мои навыки</h3>
-      <dl class="skills-list">
-        <dt class="skill-html">HTML</dt>
-        <dd class="level"><div style="width: 95%;">95%</div></dd>
-        <dt class="skill-css">CSS</dt>
-        <dd class="level"><div style="width: 90%;">90%</div></dd>
-        <dt class="skill-js">Java-script</dt>
-        <dd class="level"><div style="width: 50%;">50%</div></dd>
-        <dt class="skill-react">React</dt>
-        <dd class="level"><div style="width: 15%;">10%</div></dd>
-        <dt class="skill-ts">Type-script</dt>
-        <dd class="level"><div style="width: 10%;">5%</div></dd>
-      </dl>
+    <div class="promo__item">
+      <img class="promo__img" src="img/watch_main.png" alt="Тёмные часы с сапфировым стеклом из новой коллекции" width="502" height="804">
+      <span class="promo__price">22 000
+        <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.04761 0.500854H6.03569C7.72543 0.500854 9.09524 1.87066 9.09524 3.5604C9.09524 5.25014 7.72543 6.61995 6.03569 6.61995H2.04761V0.500854Z" stroke="#1B1A17"/>
+          <path d="M2 6.50085H0" stroke="#1B1A17"/>
+          <path d="M2.00006 0.000854492V13.0009M0.30957 9.69562H6.80958" stroke="#1B1A17"/>
+        </svg>
+      </span>
+      <span class="promo__characteristics">28 мм диаметр</span>
     </div>
+  </section>
+  
+  <section class="popular">
+    <h3 class="popular__title heading">Популярные модели</h3>
+    <a class="popular__show-more" href="#">Смотреть все</a>
+    <ul class="popular__list">
+      <li class="popular__item">
+        <article class="popular__card card">
+          <h2 class="card__title">BVLGARI</h2>
+          <span class="card__price">63 300</span>
+          <img class="card__img" src="img/watch_1.jpg" alt="описание вида часов" width="313" height="313">
+          <a class="card__link" href="#">Подробнее</a>
+        </article>
+      </li>
+      <li class="popular__item">
+        <article class="popular__card card">
+          <h2 class="card__title">BVLGARI</h2>
+          <span class="card__price">81 700</span>
+          <img  class="card__img" src="img/watch_3.jpg" alt="описание вида часов" width="313" height="313">
+          <a class="card__link" href="#">Подробнее</a>
+        </article>
+      </li>
+      <li class="popular__item">
+        <article class="popular__card card">
+          <h2 class="card__title">BVLGARI</h2>
+          <span class="card__price">72 700</span>
+          <img  class="card__img" src="img/watch_4.jpg" alt="описание вида часов" width="313" height="313">
+          <a class="card__link" href="#">Подробнее</a>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section class="advantages">
+    <h2 class="visually-hidden">Преимущества</h2>
+    <ul class="advantagess__list">
+      <li class="advantages__item visually-hidden">
+        <div class="advantages__left">
+          <img class="advantages__img" src="img/photo_banner.jpg" alt="детализация механизма часов" width="521" height="414">
+        </div>
+        <div class="advantages__right">
+          <h3 class="advantages__title heading">Подлинное качество</h3>
+          <p class="advantages__description">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
+          <a class="advantages__link button" href="#">Смотреть каталог</a>
+        </div>
+      </li>
+      <li class="advantages__item visually-hidden">
+        <div class="advantages__left">
+          <img class="advantages__img" src="img/photo_banner2.jpg" alt="детализация механизма часов" width="521" height="414">
+        </div>
+        <div class="advantages__right">
+          <h3 class="advantages__title heading">Быстрая доставка</h3>
+          <p class="advantages__description">Ваши часы найдут вас хоть в исландских ледниках, хоть в перуанских Андах.</p>
+          <a class="advantages__link button" href="#">Смотреть каталог</a>
+        </div>
+      </li>
+      <li class="advantages__item visually-hidden">
+        <div class="advantages__left">
+          <img class="advantages__img" src="img/photo_banner3.jpg" alt="детализация механизма часов" width="521" height="414">
+        </div>
+        <div class="advantages__right">
+          <h3 class="advantages__title heading">Доступный сервис</h3>
+          <p class="advantages__description">Курьер бесплатно заберет наши часы в случае поломки в период гарантийного срока, а потом привезет обратно. </p>
+          <a class="advantages__link button" href="#">Смотреть каталог</a>
+        </div>
+      </li>
+    </ul>
+    <div class="advantages__slider-control slider-control">
+      <button class="advantages__button arrow_prev" type="button"></button>
+      <span class="slider-control__position"></span>
+      <button class="advantages__button arrow_next" type="button"></button>
     </div>
-    </section>
+  </section>
 
-    <section class="portfolio">
-      <div class="container">
-      <h2 class="subheading">Мои работы</h2>
-
-      <figure class="project-image">
-        <img src="files/delovplatke.jpg" width="928" height="488" alt="Cайт магазина Дело в платке">
-      </figure>
-      <h3>Магазин «Дело в платке»</h3>
-      <p>Мой первый сайт. Дизайнера не было, было 170 часов курсов в ТУСУРе, вспоминания HTML, узнавания CSS, немного SVG,  
-        бесконечное множество домашних заданий на все полученные знания, а также javaScript, 
-        JQuery, фреймворки, конструкторы, Canvas и самостоятельный проект в финале. Не то чтобы было требование 
-        использовать в проекте все и сразу, но раз уж учили, то очень хотелось попробовать...</p>
-      <a class="button" href="source/delovplatke/index.html">Открыть сайт</a>
-      
-      <figure class="project-image">
-        <img src="files/project.jpg" width="928" height="536" alt="Cайт магазина товаров для дома">
-      </figure>
-      <h3>Магазин товаров для дома</h3>
-      <p>Работа по подписке на html-academy, поэтому только стартовая страничка - большего там не предполагалось. 
-        Были другие проекты - Kvast, Великий Keksby, по сложности они примерно такие же.
-      </p>
-      <a class="button" href="source/project/index.html">Открыть страницу</a>
-
-      <figure class="project-image">
-        <img src="files/beautySalon.jpg" width="928" height="536" alt="Cайт салона красоты">
-      </figure>
-      <h3>Cайт салона красоты</h3>
-      <p> Работа во время учебы в Rubius-academy. Был макет в figma - это упрощало задачу, так как не нужно было придумывать 
-        внешний вид. Больше готовых решений: bootstrap, плагины. Во время учебы был подключен сервер с бэком, 
-        в форму заявки на запись с него подтягивались данные о мастерах и услугах. Выложен на хостинг для тренировки выкладывания на хостинг.    
-      </p>
-      <a class="button" href="https://determined-swanson-a44406.netlify.app">Открыть страницу</a>
-
-      <figure class="project-image">
-        <img src="files/crm.jpg" width="928" height="536" alt="CRM салона красоты">
-      </figure>
-      <h3>CRM салона красоты</h3>
-      <p>Система управления базой клиентов и мастеров. Проба React-а с гуглом и преподавателем: раздел "Мастера" - с преподавателем,
-         раздел с заявками - самостоятельно с гуглом. Посмотреть можно на github. Еще учусь.</p>
-      <a class="button" href="https://github.com/NataliaVozhdaeva/BeautyWorld/tree/crm">Открыть страницу</a>   
-
-      <figure class="project-image">
-        <img src="files/JD.png" width="928" height="536" alt="Jane Doe">
-      </figure>
-      <h3>Лэндинг мини-соцсети</h3>
-      <p>Одно из тестовых, которое разрешили выложить на github. Верстка на flex, grid. Немного js в валидации формы. Есть мобильная версия. Был макет в figma.</p>
-      <a class="button" href="source/Jane Doe/src/index.html">Открыть страницу</a>   
-
-      <figure class="project-image">
-        <img src="files/watchStore.jpg" width="928" height="536" alt="Jane Doe">
-      </figure>
-      <h3>Магазин часов</h3>
-      <p>Открытый макет. Стилизация по макету в figma и немного js в качестве тренировки (слайдер, модалки в новостях). </p>
-      <a class="button" href="source/WatchStore/index.html">Открыть страницу</a>   
+  <section class="news-company">
+    <h2 class="visually-hidden">Подписка на новости</h2>
+    <div class="news-company__left">
+      <h2 class="news-company__text heading">Следите за нашими новостями</h2>
+      <p class="news-company__description">Подписывайтесь на <strong>@conquest_watch</strong> в соцсетях <br> и узнавайте о новинках и акциях первыми.</p>
+      <section class="news-company__socials socials">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="https://instagram.com" target="_blank"><img src="img/instagram_icon.jpg" alt="Мы в инсте" /></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://facebook.com" target="_blank"> <img src="img/facebook_icon.jpg" alt="Мы в ФБ" /></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://twitter.com" target="_blank"> <img src="img/twitter_icon.jpg" alt="Мы в twitter" /></a>
+          </li>
+        </ul>
+      </section>
     </div>
-    </section>
+    <div class="news-company__right">
+      <a href="#"><img class="news-company__img open-modal" data-modal="1" src="img/photo_1.jpg" alt="Описание фото" width="242" height="228"></a>
+      <a href="#"><img class="news-company__img open-modal" data-modal="2" src="img/photo_2.jpg" alt="Описание фото" width="242" height="228"></a>
+      <a href="#"><img class="news-company__img open-modal" data-modal="3" src="img/photo_3.jpg" alt="Описание фото" width="377" height="460"></a>
+    </div>
 
-    <footer class="page-footer">
-      <div class="container">
-        <a href="tel:+79539229206" class="footer-phone">tel: +7-953-922-92-06</a>
-        <a href="mailto:LomzNat@yandex.ru" class="footer-email">e-mail: LomzNat@yandex.ru</a>   
-      </div>   
-    </footer>
-  </body>
+    <div class="modal-window" data-modal="1">
+      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+      <div class="modal__title">
+        <img class="modal-window__img" alt="Описание фото" />
+        <div class="modal-window__text">
+          <h2>This is news!</h2>
+          <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, 
+            explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, 
+            sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, 
+            qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi 
+            tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate 
+            velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? 
+            At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum 
+            deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, 
+            similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-window" data-modal="2">
+      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <div class="modal__title">
+          <img class="modal-window__img" alt="Описание фото" />
+          <div class="modal-window__text">
+            <h2>This is news!</h2>
+            <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+              totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, 
+              explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, 
+              sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, 
+              qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi 
+              tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+              <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+              nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate 
+              velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? 
+              At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum 
+              deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, 
+              similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal-window" data-modal="3">
+      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <div class="modal__title">
+          <img class="modal-window__img" alt="Описание фото" />
+          <div class="modal-window__text">
+            <h2>This is news!</h2>
+            <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+              totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, 
+              explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, 
+              sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, 
+              qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi 
+              tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+              <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+              nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate 
+              velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? 
+              At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum 
+              deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, 
+              similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="overlay-modal"></div>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__column page-footer-column--logo">
+    <a class="page-footer__logo logo">
+      <img class="page-footer__logo logo" src="img/logo_footer.png" alt="Логотип" width="103" height="26">
+    </a>
+    <div class="page-footer__wrapper">
+      <p><a class="page-footer__link" href="tel:+784994504797">8 (499) 450-47-97</a><br>
+      <a class="page-footer__link" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a></p>
+    </div>
+  </div>
+  <div class="page-footer__column page-footer__column--about">
+    <h3 class="page-footer__title">О Компании</h3>
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Наши магазины</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Вакансии</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Сертификаты</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Отзывы</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="page-footer__column page-footer__column--about">
+    <h3 class="page-footer__title">Покупателям</h3>
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Как заказать?</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">FAQ</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Корпоративным клиентам</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="page-footer__column page-footer__column--about">
+    <h3 class="page-footer__title">Оплата и доставка</h3>
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Способы оплаты</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Время доставки</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Гарантии и ремонт</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Возврат и компенсации</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="scripts/index.js" ></script>
+</body>
 </html>
