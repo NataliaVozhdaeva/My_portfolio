@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/playfair/Playfairdisplayregular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/playfair/Playfairdisplaybold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Robotobold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Robotolight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Robotoblack.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Robotoitalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Robotomedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Robotothin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #444240;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2 {
+  margin: 0;
+}
+
+a:active {
+  color: #d4b098;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 26px 38px;
+  background-color: #d4b098;
+}
+
+.button--dark {
+  background-color: #444240;
+}
+
+.main-nav__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #555248;
+}
+
+.news-company__description {
+  font-size: 16px;
+  line-height: 27px;
+  color: #444240;
+}
+
+.page-footer {
+  background-color: #444240;
+}
+
+.page-footer__link {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.page-footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.page-header {
+  display: flex;
+  padding: 35px 98px;
+  justify-content: space-between;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav__logo {
+  display: inline-block;
+  margin-right: 265px;
+}
+
+.main-nav__list {
+  display: flex;
+}
+
+.main-nav__item:not(:last-child) {
+  margin-right: 65px;
+}
+
+.main-nav__item {
+  align-self: start;
+}
+
+a:hover {
+  color: #d4b098;
+}
+
+.user-nav {
+  display: flex;
+  margin-top: 16px;
+}
+
+.user-nav__link {
+  width: 20px;
+  height: 20px;
+}
+
+.user-nav__link:not(:last-child) {
+  margin-right: 23px;
+}
+
+@keyframes change {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.user-nav__link:hover {
+  animation: change 2s;
+  color: #fff;
+}
