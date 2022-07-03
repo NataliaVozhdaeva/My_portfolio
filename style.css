@@ -1,12 +1,12 @@
 body {
   margin: 0;
   min-width: 960px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 32px;
   color: #222222;
   background-color: #f2f4f6;
-  background-image: url("img/hero-bg.jpg");
+  background-image: url('img/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -39,12 +39,12 @@ body {
 
 .header-email {
   padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
+  background-image: url('img/icon-email-header.svg');
 }
 
 .header-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
+  background-image: url('img/icon-phone-header.svg');
 }
 
 .hero-image {
@@ -58,7 +58,7 @@ body {
 
 .heading {
   margin: 0 0 16px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
   font-size: 88px;
   line-height: 96px;
   font-weight: 400;
@@ -76,7 +76,7 @@ body {
 
 .subheading {
   margin: 0 0 56px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
   font-size: 64px;
   line-height: 80px;
   font-weight: 400;
@@ -112,23 +112,23 @@ body {
 }
 
 .skill-html {
-  background-image: url("img/icon-html.svg");
+  background-image: url('img/icon-html.svg');
 }
 
 .skill-css {
-  background-image: url("img/icon-css.svg");
+  background-image: url('img/icon-css.svg');
 }
 
 .skill-js {
-  background-image: url("img/icon-js.png");
+  background-image: url('img/icon-js.png');
 }
 
 .skill-react {
-  background-image: url("img/1.png");
+  background-image: url('img/1.png');
 }
 
 .skill-ts {
-  background-image: url("img/type.png");
+  background-image: url('img/type.png');
 }
 
 .level {
@@ -198,10 +198,10 @@ body {
 
 .footer-email {
   padding-left: 30px;
-  background-image: url("img/icon-email-footer.svg");
+  background-image: url('img/icon-email-footer.svg');
 }
 
 .footer-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone-footer.svg");
+  background-image: url('img/icon-phone-footer.svg');
 }
