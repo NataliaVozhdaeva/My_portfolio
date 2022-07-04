@@ -48,12 +48,13 @@ body {
 }
 
 .hero-image {
-  margin-bottom: 620px;
+  margin-bottom: 500px;
 }
 
 .hero-image .container {
-  max-width: 1408px;
+  max-width: 1208px;
   text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
 }
 
 .heading {
@@ -64,10 +65,17 @@ body {
   font-weight: 400;
 }
 
-.hero-image p {
+.hero-image h3 {
   margin: 0;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hero-image p {
+  margin-top: 50px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
 }
 
 .intro {
