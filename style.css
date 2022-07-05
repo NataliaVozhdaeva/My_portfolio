@@ -78,6 +78,44 @@ body {
   font-weight: 500;
 }
 
+.bear {
+  display: none;
+}
+
+.animation-text {
+  margin: 0;
+  position: absolute;
+  bottom: 250px;
+  left: 150px;
+  animation: opacity 1s 2 alternate;
+  opacity: 0;
+}
+
+@keyframes opacity {
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.goToRussian {
+  display: inline-block;
+  position: absolute;
+  bottom: -300px;
+  animation: toggle-on-ru 1s 0s 2 alternate ease;
+}
+
+@keyframes toggle-on-ru {
+  0% {
+    bottom: -300px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
 .intro {
   margin: 0 0 120px;
 }
